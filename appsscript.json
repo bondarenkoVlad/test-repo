@@ -1,0 +1,15 @@
+{
+  "timeZone": "Europe/Kyiv",
+  "exceptionLogging": "STACKDRIVER",
+  "runtimeVersion": "V8",
+  "dependencies": {
+    "libraries": [
+      {
+        "userSymbol": "kizen",
+        "libraryId": "1aScqPJb1zaxn0DhRSxtQUTN4sTTyscKkPCIuLxSUv0jWk8vVhv7oZWOF",
+        "version": "0",
+        "developmentMode": true
+      }
+    ]
+  }
+}
