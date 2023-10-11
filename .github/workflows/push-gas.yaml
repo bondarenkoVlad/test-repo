@@ -21,7 +21,7 @@ jobs:
 
     - name: Login to clasp
       run: |
-        echo '${{ secrets.GAS_CREDENTIALS }}' > clasp-creds.json
+        # echo '${{ secrets.GAS_CREDENTIALS }}' > clasp-creds.json
         clasp login --creds clasp-creds.json
 
     - name: Push changes to GAS Script

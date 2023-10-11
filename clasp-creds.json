@@ -1,0 +1,10 @@
+{
+  "web": {
+    "client_id": "480185359485-mf9su0jvo1mjb0mdqa63ki82509bfdjf.apps.googleusercontent.com",
+    "project_id": "skilful-boulder-401710",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_secret": "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"
+  }
+}
