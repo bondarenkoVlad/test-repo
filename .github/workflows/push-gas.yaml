@@ -20,7 +20,9 @@ jobs:
       run: npm install -g @google/clasp
 
     - name: Login to clasp
-      run: clasp login --clientEmail ${{ secrets.GAS_EMAIL }} --key ${{ secrets.GAS_KEY }}
+      run: |
+        echo "${{ secrets.GAS_CREDENTIALS }}" > clasp-creds.json
+        clasp login --creds clasp-creds.json
 
     - name: Pull changes to GAS Script
       run: clasp push
