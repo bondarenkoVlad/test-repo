@@ -1,0 +1,26 @@
+name: Update GAS Script
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  update-gas:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14'
+
+    - name: Install clasp
+      run: npm install -g @google/clasp
+
+    - name: Login to clasp
+      run: clasp login
+
+    - name: Pull changes to GAS Script
+      run: clasp push
